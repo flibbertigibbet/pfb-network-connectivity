@@ -2,7 +2,10 @@
   polygon-opacity: 0.65;
 }
 
-#neighborhood_census_blocks[overall_score >= 0][overall_score < 6] {
+#neighborhood_census_blocks[overall_score = 0] {
+  polygon-opacity: 0;
+}
+#neighborhood_census_blocks[overall_score > 0][overall_score < 6] {
   polygon-fill: #FF3300;
 }
 #neighborhood_census_blocks[overall_score >= 6][overall_score < 12] {
